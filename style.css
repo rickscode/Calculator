@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+  
+}
+
+.calculator {
+  max-width: 50vw;
+  height: 70vh;
+  border-radius: 10%;
+  margin: 0 auto;
+  background-color: grey;
+}
+
+#display {
+    min-width: 100%;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+.button-container {
+  /* small spacing within our container */
+  padding: 20px;
+
+  /* the grid stuff! */
+  display: grid;
+
+  /* create 4 columns */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}

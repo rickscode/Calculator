@@ -1,4 +1,4 @@
-// Function for adding
+
 
 const add = (a, b) => {return a + b};
 

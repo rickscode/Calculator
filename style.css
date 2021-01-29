@@ -30,4 +30,5 @@ body {
 
   /* create 4 columns */
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  
 }

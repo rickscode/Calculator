@@ -3,7 +3,7 @@
 }
 
 body {
-
+  background-color: #008EB2;
   
 }
 
@@ -17,18 +17,17 @@ body {
 
 #display {
     min-width: 100%;
-    padding: 20px;
-    background-color: lightgray;
+    height: 15%;
+    text-align: center;
+    line-height: 10vh;
+    background-color: white;
 }
 
 .button-container {
-  /* small spacing within our container */
-  padding: 20px;
-
-  /* the grid stuff! */
+  height: 75%;
+  width: 90%;
   display: grid;
-
-  /* create 4 columns */
+  margin: auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   
-}
+  }

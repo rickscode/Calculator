@@ -65,7 +65,7 @@ pressOperator.forEach((button) => {
 button.addEventListener('click', storeInput);       
 });
 
-// git push to here
+
 
 function storeInput(e) {
     
@@ -78,11 +78,9 @@ function storeInput(e) {
     
     // clear display
     displayValue = "";
-    // document.getElementById("display").textContent = operatorValue;
-    // console.log("display", displayValue);
+    document.getElementById("display").textContent = operatorValue;
 }
-
-// git push to here 
+ 
 
 function check() {
     secondNum = parseInt(displayValue);

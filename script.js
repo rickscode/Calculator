@@ -1,5 +1,4 @@
 
-
 const add = (a, b) => {return a + b};
 
 // Function for subtracting
@@ -47,11 +46,9 @@ button.addEventListener('click', screen);
 
 function screen(e) {
     displayValue += e.target.textContent;
-    console.log("display", displayValue);
     document.getElementById("display").textContent = displayValue;
 }
 
-// Step 5
 
 // Binding for DOM selection .operator
 
@@ -65,33 +62,33 @@ pressOperator.forEach((button) => {
 button.addEventListener('click', storeInput);       
 });
 
-
+// Funtion for storing first number value
 
 function storeInput(e) {
     
     if(operatorValue !== null) check();
     firstNum = parseInt(displayValue);
-    console.log("first", firstNum);
+    
     
     operatorValue = e.target.textContent;
-    console.log("operator", operatorValue);
+   
     
-    // clear display
+    // Clear display
     displayValue = "";
-    document.getElementById("display").textContent = operatorValue;
+    // Display firstNum and operatorValue
+    document.getElementById("display").textContent = `${firstNum} ${operatorValue}`;
 }
  
 
 function check() {
     secondNum = parseInt(displayValue);
-    console.log("second", secondNum);
     document.getElementById("display").textContent = operate(operatorValue, firstNum,secondNum);
     
     displayValue = document.getElementById("display").textContent;
-    console.log("display", displayValue);
 }
 
 
+// Execution for equating expression
 
 let equate = document.querySelector(".equals");
 
@@ -118,5 +115,17 @@ function answer(e) {
     }
 }
 
+// Clear display & input bindings
 
+let clear = document.getElementById("clear");
+ 
+clear.addEventListener('click', clearScreen); 
+
+function clearScreen(e) {
+    displayValue = "";
+    operatorValue= "";
+    firstNum = "";
+    secondNum = "";
+    document.getElementById("display").textContent = displayValue;
+} 
 

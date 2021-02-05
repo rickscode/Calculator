@@ -73,9 +73,9 @@ function storeInput(e) {
     operatorValue = e.target.textContent;
    
     
-    // Clear display
+// Clear display
     displayValue = "";
-    // Display firstNum and operatorValue
+// Display firstNum and operatorValue
     document.getElementById("display").textContent = `${firstNum} ${operatorValue}`;
 }
  

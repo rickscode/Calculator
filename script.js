@@ -88,7 +88,7 @@ function check() {
 }
 
 
-// Execution for equating expression
+// Code for equating expression
 
 let equate = document.querySelector(".equals");
 
